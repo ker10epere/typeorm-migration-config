@@ -19,6 +19,7 @@
 3. reference to
 
    > typeorm.config.ts - config() function
+   > 
    > typeorm.config-migrations.ts
 
 4. add this properties to script property of package.json
