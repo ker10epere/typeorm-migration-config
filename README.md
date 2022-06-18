@@ -1,10 +1,10 @@
 # Setup to make typeorm 0.3.6 migrations work for nestjs
 
-> Take note
+> Take note:
 > 
 > You must always compile to your typescript file make this work, because it targets javascript file
 >
-> And also your typeorm must always target javascript file in your scripts
+> Your typeorm must always target javascript file in your scripts
 
 1. In package.json add this line
 
