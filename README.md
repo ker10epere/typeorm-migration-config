@@ -46,9 +46,9 @@
    ```
 
 2. configure typeorm.config.ts
-
-   - { .ts, .js } not working in typescript
-   - only [ (filename|glob pattern).ts ] works
+   - in enitity and migration property, modify filename paths
+   - filename with "{ .ts, .js }" is not working in typescript
+   - only (filename|glob pattern).ts works - example: **/migrations/*.ts
 
 3. Add this in package.json
 
