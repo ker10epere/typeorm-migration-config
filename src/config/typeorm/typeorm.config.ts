@@ -17,17 +17,12 @@ export function config() {
     driver: pg,
     type: 'postgres',
     url,
-    //   migrations: ['src/database/migrations/*{.ts,.js}'],
-    entities: [__dirname, '../../**/*.entity{.ts,.js}'], // also tried with [__dirname + '\\entities\\**\\*{.ts,.js}']
-    migrations: [__dirname, '../../**/migrations/*migrations{.ts,.js}'],
-    //   cli: {
-    //     migrationsDir: __dirname + '/../../database/migrations',
-    //   },
+    entities: [__dirname, '../../**/*.entity.ts'], // { .ts, .js } not working in ts
+    migrations: [__dirname, '../../**/migrations/*migrations.ts'], // { .ts, .js } not working in ts
     extra: {
       charset: 'utf8mb4_unicode_ci',
     },
     synchronize: false,
-    //   ...isSSL(),
     autoLoadEntities: true,
   } as DataSourceOptions
 }
