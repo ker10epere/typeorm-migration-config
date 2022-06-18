@@ -48,6 +48,7 @@
 2. configure typeorm.config.ts
 
    - { .ts, .js } not working in typescript
+   - only [ (filename|glob pattern).ts ] works
 
 3. Add this in package.json
 
